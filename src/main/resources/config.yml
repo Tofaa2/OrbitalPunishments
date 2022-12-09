@@ -1,0 +1,77 @@
+# MySQL
+database:
+    jdbc-url: "jdbc:mysql://u5825_2hR8dc8qsw:==lG09MOq8Zvgi9B1kuKX.GZ@paneldatabase.humbleservers.com:3306/s5825_ads"
+    table: "punishments"
+
+# This setting indicates the plugin to show the punishment messages to staff members.
+show-messages-to-staff: true
+
+# This setting indicates the plugin to show the punishment messages to all members online
+show-messages-to-all: false
+
+messages:
+
+    no-permission: "&cYou do not have permission to use this command."
+    invalid-args: "&cInvalid arguments. Type /orbital help for help."
+    invalid-player: "&cThe player %player% does not exist." # %player% is the player's name
+    help:
+        - "&7&m----------------------------------------"
+        - "&6&lOrbital &7- &6&lHelp"
+        - "&7&m----------------------------------------"
+        - "&6/orbital help &7- &6Shows this help message."
+        - "&6/orbital reload &7- &6Reloads the config."
+        - "&6/kick <player> <reason> &7- &6Kicks a player."
+        - "&6/ban <player> <reason> &7- &6Bans a player."
+        - "&6/unban <player> &7- &6Unbans a player."
+        - "&6/mute <player> <reason> &7- &6Mutes a player."
+        - "&6/unmute <player> &7- &6Unmutes a player."
+        - "&6/tempban <player> <time> <reason> &7- &6Temporarily bans a player."
+        - "&6/tempmute <player> <time> <reason> &7- &6Temporarily mutes a player."
+        - "&7&m----------------------------------------"
+
+    # %reason% is the reason of the punishment
+    # %issuer% is the issuer of the punishment
+    # %player% is the player's name
+    kick:
+        for-user: "&cYou have been kicked from the server for %reason%."
+        for-staff: "&c%player% has been kicked for %reason%."
+
+    # %reason% is the reason of the punishment
+    # %issuer% is the issuer of the punishment
+    # %player% is the player's name
+    # %time% is the time of the punishment
+    temp-mute:
+        for-user: "&cYou cannot speak now, you are currently muted for %reason% until %time%."
+        for-staff: "&c%player% has been muted for %reason% until %time%."
+
+    # %reason% is the reason of the punishment
+    # %issuer% is the issuer of the punishment
+    # %player% is the player's name
+    mute:
+        for-user: "&cYou cannot speak now, you are currently muted for %reason%."
+        for-staff: "&c%player% has been muted for %reason%."
+
+    # %reason% is the reason of the punishment
+    # %issuer% is the issuer of the punishment
+    # %player% is the player's name
+    # %time% is the time of the punishment
+    temp-ban:
+        for-user: "&cYou have been banned from the server for %reason% until %time%."
+        for-staff: "&c%player% has been banned for %reason% until %time%."
+
+    # %reason% is the reason of the punishment
+    # %issuer% is the issuer of the punishment
+    # %player% is the player's name
+    ban:
+        for-user: "&cYou have been banned from the server for %reason%."
+        for-staff: "&c%player% has been banned for %reason%."
+
+    # %reason% is the reason of the punishment
+    # %issuer% is the issuer of the punishment
+    # %player% is the player's name
+    blacklist:
+        for-user: "&cYou have been blacklisted from the server for %reason%."
+        for-staff: "&c%player% has been blacklisted for %reason%."
+
+    unban-player: "&c%player% has been unbanned." # %player% is the player's name
+    unmute-player: "&c%player% has been unmuted." # %player% is the player's name
