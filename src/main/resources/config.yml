@@ -1,6 +1,6 @@
 # MySQL
 database:
-    jdbc-url: "jdbc:mysql://u5825_2hR8dc8qsw:==lG09MOq8Zvgi9B1kuKX.GZ@paneldatabase.humbleservers.com:3306/s5825_ads"
+    jdbc-url: "database url"
     table: "punishments"
 
 # This setting indicates the plugin to show the punishment messages to staff members.
